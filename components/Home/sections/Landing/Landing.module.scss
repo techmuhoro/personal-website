@@ -1,0 +1,14 @@
+.hero-image {
+   @apply w-[70%] h-[400px]  mx-auto rounded-md relative;
+   &:hover {
+      .underlay {
+         @apply bg-primary bg-opacity-30  top-3 left-3;
+      }
+   }
+}
+.profile {
+   @apply absolute z-50;
+}
+.underlay {
+   @apply absolute top-5 left-5 w-full h-full bg-transparent border-2 border-primary rounded-md transition-all;
+}

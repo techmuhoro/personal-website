@@ -1,0 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100;200;300;400;500;600;700;800;900&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+   @apply font-inter;
+}
+body::-webkit-scrollbar-thumb {
+   @apply bg-opacity-70 rounded-sm w-[80%];
+   background-color: rgb(151, 151, 151);
+}
+body::-webkit-scrollbar {
+   background-color: rgb(35, 35, 57);
+   width: 8px;
+}
+
+.section-container {
+   @apply w-[90%] m-auto;
+}
