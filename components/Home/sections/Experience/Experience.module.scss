@@ -1,0 +1,8 @@
+.tab-link {
+   @apply py-3 w-32 text-center cursor-pointer hover:bg-primary hover:bg-opacity-10;
+
+   &.active {
+      @apply border-b border-primary bg-primary bg-opacity-5;
+      @apply md:border-l border-b-0;
+   }
+}

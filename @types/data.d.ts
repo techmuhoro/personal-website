@@ -6,3 +6,12 @@ export type Project = {
    github: string
    link: string
 }
+
+export type Experience = {
+   title: string
+   fullName: string
+   role: string
+   start: string
+   end: string
+   achievements: string[]
+}
