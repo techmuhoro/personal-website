@@ -1,13 +1,14 @@
 import React from 'react'
-import ProjectCard from '@comps/reusable/ProjectCard'
+import ProjectCard from './ProjectCard'
 import { projects } from 'data/projects'
+import styles from './Projects.module.scss'
 
-export default function Projects() {
+export function Projects() {
    return (
       <div className='mb-20'>
          <div className='section-container'>
             <p className='font-bold text-3xl mb-4'>My Projects</p>
-            <div className='flex flex-col items-center gap-y-5'>
+            <div className={styles['cards-container']}>
                {React.Children.toArray(
                   projects
                      .slice(0, 4)

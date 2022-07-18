@@ -1,5 +1,23 @@
+.nav-container {
+   @apply flex items-center justify-between px-6 lg:px-24 h-[80px];
+}
+
+.hero-container {
+   @apply md:h-[calc(100vh_-_80px)];
+
+   & .left-side {
+      @apply mb-32  lg:w-1/2;
+      @apply md:h-full md:w-7/12 md:flex md:items-center;
+   }
+
+   & .right-side {
+      @apply lg:w-1/2;
+      @apply md:h-full md:w-5/12 md:flex md:items-center;
+   }
+}
+
 .hero-image {
-   @apply w-[70%] h-[400px]  mx-auto rounded-md relative;
+   @apply w-[70%] lg:w-[70%] h-[400px] md:w-[90%] md:h-[350px] lg:h-[80%] mx-auto rounded-md relative;
    &:hover {
       .underlay {
          @apply bg-primary bg-opacity-30  top-3 left-3;
@@ -11,4 +29,8 @@
 }
 .underlay {
    @apply absolute top-5 left-5 w-full h-full bg-transparent border-2 border-primary rounded-md transition-all;
+}
+
+.hero-cta {
+   @apply font-mono text-primary  px-16 py-3 text-lg rounded-md border border-primary bg-primary bg-opacity-5 hover:bg-opacity-0 transition duration-200;
 }

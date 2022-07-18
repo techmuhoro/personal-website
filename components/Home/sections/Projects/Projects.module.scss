@@ -1,0 +1,4 @@
+.cards-container {
+   @apply flex flex-col  gap-x-4 items-center gap-y-5;
+   @apply md:flex-row md:flex-wrap md:justify-between;
+}

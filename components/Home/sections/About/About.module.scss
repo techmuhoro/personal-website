@@ -1,0 +1,16 @@
+.about-container {
+   @apply mb-20  bg-plus-pattern pt-12 pb-20 border;
+
+   & .about-text {
+      @apply mb-10 md:mb-0 md:w-7/12 lg:w-1/2;
+   }
+
+   & .about-image {
+      @apply md:w-5/12 lg:w-1/2 md:flex md:items-center md:justify-center;
+
+      & .img-container {
+         @apply w-[400px]  h-[400px]  mx-auto relative;
+         @apply md:w-[300px] lg:w-[400px] md:h-[300px] lg:h-[400px];
+      }
+   }
+}
