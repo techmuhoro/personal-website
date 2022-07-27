@@ -3,7 +3,7 @@ import React from 'react'
 
 export default function Contact() {
    return (
-      <div className='mb-20'>
+      <section id='contact' className='mb-20'>
          <div className='section-container'>
             <p className='font-bold text-3xl mb-4 tracking-[0.03rem]'>
                How to reach me
@@ -22,11 +22,13 @@ export default function Contact() {
             <div className='flex justify-center'>
                <Link href='mailto:muhorojames7@gmail.com'>
                   <button className='border border-primary px-10 py-3 rounded-md bg-primary bg-opacity-5 hover:bg-opacity-0 transition-all'>
-                     Leave message
+                     <span className='text-primary font-mono text-lg'>
+                        Leave message
+                     </span>
                   </button>
                </Link>
             </div>
          </div>
-      </div>
+      </section>
    )
 }

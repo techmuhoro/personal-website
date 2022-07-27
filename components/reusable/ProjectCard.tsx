@@ -6,6 +6,7 @@ import { faExternalLinkAlt } from '@fortawesome/free-solid-svg-icons'
 import Link from 'next/link'
 import Image from 'next/image'
 import { Project } from '@/types/data'
+// import styles from 'Reusable.module.scss';
 
 export default function ProjectCard({ project }: { project: Project }) {
    return (

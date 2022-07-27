@@ -4,6 +4,9 @@
 @tailwind components;
 @tailwind utilities;
 
+html {
+   scroll-behavior: smooth;
+}
 body {
    @apply font-inter;
 }
@@ -17,5 +20,5 @@ body::-webkit-scrollbar {
 }
 
 .section-container {
-   @apply w-[90%] m-auto;
+   @apply w-[90%] m-auto lg:w-[80%];
 }

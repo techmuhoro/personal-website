@@ -20,7 +20,7 @@ export function Experience() {
    })
 
    return (
-      <div className='mb-20'>
+      <div id='experience' className='mb-20'>
          <div className='section-container'>
             <div className='lg:flex lg:justify-center'>
                <div className=' lg:w-[700px]'>
@@ -30,12 +30,14 @@ export function Experience() {
                         <ul className='font-mono text-sm flex gap-x-4 flex-nowrap  overflow-x-auto md:flex-col'>
                            <li
                               onClick={() => setActiveTab('techtenum')}
-                              className={`${tabClass1}`}>
+                              className={`${tabClass1}`}
+                           >
                               Techtenum
                            </li>
                            <li
                               onClick={() => setActiveTab('knh')}
-                              className={tabClass2}>
+                              className={tabClass2}
+                           >
                               KNH
                            </li>
                         </ul>

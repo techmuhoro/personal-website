@@ -1,5 +1,9 @@
 .nav-container {
    @apply flex items-center justify-between px-6 lg:px-24 h-[80px];
+
+   &.nav-float {
+      @apply fixed z-50 top-0 left-0 w-full bg-dark;
+   }
 }
 
 .hero-container {
@@ -24,13 +28,50 @@
       }
    }
 }
+
 .profile {
    @apply absolute z-50;
 }
+
 .underlay {
    @apply absolute top-5 left-5 w-full h-full bg-transparent border-2 border-primary rounded-md transition-all;
 }
 
 .hero-cta {
    @apply font-mono text-primary  px-16 py-3 text-lg rounded-md border border-primary bg-primary bg-opacity-5 hover:bg-opacity-0 transition duration-200;
+}
+
+.mobile-nav-container {
+   @apply fixed top-0 -left-[100%] w-full h-screen backdrop-blur z-50 transition-[left] duration-200;
+
+   &.show {
+      @apply left-0;
+   }
+}
+
+.mobile-links-wrapper {
+   @apply flex flex-col gap-y-16 text-xl items-center mt-16 font-mono;
+}
+.mobile-link {
+   @apply w-full text-center cursor-pointer hover:bg-primary hover:text-black;
+   @apply transition-[background-color] duration-300;
+
+   .brackets {
+      @apply text-primary;
+   }
+
+   &:hover .brackets {
+      @apply text-black;
+   }
+}
+
+.nav-link {
+   @apply relative;
+}
+
+.nav-link::before {
+   @apply content-[''] w-0 h-[3px] bg-primary block absolute left-0 -bottom-2 transition-all duration-300;
+}
+.nav-link:hover::before {
+   @apply w-full;
 }

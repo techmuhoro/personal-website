@@ -21,9 +21,11 @@ export default function SingleExperience({
             </p>
          </div>
          <div>
-            {experience?.achievements.map((item) => (
-               <Achievement text={item} />
-            ))}
+            {React.Children.toArray(
+               experience?.achievements.map((item) => (
+                  <Achievement text={item} />
+               ))
+            )}
          </div>
       </div>
    )

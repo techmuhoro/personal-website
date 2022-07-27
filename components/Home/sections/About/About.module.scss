@@ -1,5 +1,5 @@
 .about-container {
-   @apply mb-20  bg-plus-pattern pt-12 pb-20 border;
+   @apply mb-20  bg-plus-pattern pt-12 pb-20;
 
    & .about-text {
       @apply mb-10 md:mb-0 md:w-7/12 lg:w-1/2;

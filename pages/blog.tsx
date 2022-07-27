@@ -1,9 +1,9 @@
 import React from 'react'
 
-export default function MobileNav() {
+export default function Blog() {
    return (
       <div>
-         <p>L</p>
+         <p>Hello from blog</p>
       </div>
    )
 }

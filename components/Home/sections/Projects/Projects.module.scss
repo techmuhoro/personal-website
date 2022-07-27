@@ -1,4 +1,15 @@
 .cards-container {
    @apply flex flex-col  gap-x-4 items-center gap-y-5;
-   @apply md:flex-row md:flex-wrap md:justify-between;
+   @apply md:flex-row md:justify-center lg:justify-between md:flex-wrap;
+}
+
+.projects-link {
+   @apply font-mono text-blue-500 text-lg flex gap-x-1 transition-[gap] duration-200;
+
+   & .link-icon {
+      @apply mt-[2px];
+   }
+}
+.projects-link:hover {
+   @apply gap-x-3;
 }
