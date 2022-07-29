@@ -1,0 +1,24 @@
+.page-header {
+   @apply text-center text-3xl uppercase font-mono tracking-wider relative inline-block;
+}
+.page-header::before {
+   content: '';
+   @apply absolute bg-primary h-[3px] w-full left-0 -bottom-1 rounded-3xl;
+}
+
+.blog-link {
+   @apply font-mono text-blue-500 text-lg flex gap-x-1 transition-[gap] duration-200;
+
+   & .link-icon {
+      @apply mt-[2px];
+   }
+
+   &:hover {
+      @apply gap-x-3;
+   }
+}
+.cards-container {
+   display: grid;
+   grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+   gap: 32px;
+}

@@ -1,1 +1,1 @@
-import React from 'react';
+export { Blog as default } from './Blog'

@@ -21,7 +21,7 @@
 }
 
 .hero-image {
-   @apply w-[70%] lg:w-[70%] h-[400px] md:w-[90%] md:h-[350px] lg:h-[80%] mx-auto rounded-md relative;
+   @apply w-[70%] lg:w-[70%] h-[400px] md:w-[90%] md:h-[350px] lg:h-[60%] mx-auto rounded-md relative;
    &:hover {
       .underlay {
          @apply bg-primary bg-opacity-30  top-3 left-3;

@@ -1,9 +1,14 @@
-import React from 'react'
+import React, { Suspense } from 'react'
+import dynamic from 'next/dynamic'
+
+const LazyBlog = dynamic(() => import('components/Blog'), {
+   suspense: true,
+})
 
 export default function Blog() {
    return (
-      <div>
-         <p>Hello from blog</p>
-      </div>
+      <Suspense fallback='Loading...'>
+         <LazyBlog />
+      </Suspense>
    )
 }
