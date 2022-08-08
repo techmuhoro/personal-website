@@ -1,7 +1,11 @@
 import Link from 'next/link'
 import React from 'react'
+import CoolButton from 'widgets/CoolButton'
+import { useRouter } from 'next/router'
 
 export default function Contact() {
+   const router = useRouter()
+
    return (
       <section id='contact' className='mb-20'>
          <div className='section-container'>
@@ -20,13 +24,16 @@ export default function Contact() {
                Leave a me a message(muhorojames7@gmail.com)
             </p>
             <div className='flex justify-center'>
-               <Link href='mailto:muhorojames7@gmail.com'>
-                  <button className='border border-primary px-10 py-3 rounded-md bg-primary bg-opacity-5 hover:bg-opacity-0 transition-all'>
+               <CoolButton
+                  xPadding='px-16'
+                  text='Leave Message'
+                  handler={() => router.push('mailto:muhorojames7@gmail.com')}
+               />
+               {/* <button className='border border-primary px-10 py-3 rounded-md bg-primary bg-opacity-5 hover:bg-opacity-0 transition-all'>
                      <span className='text-primary font-mono text-lg'>
                         Leave message
                      </span>
-                  </button>
-               </Link>
+                  </button> */}
             </div>
          </div>
       </section>

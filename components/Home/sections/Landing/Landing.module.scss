@@ -66,7 +66,7 @@
 }
 
 .nav-link {
-   @apply relative;
+   @apply relative cursor-pointer;
 }
 
 .nav-link::before {

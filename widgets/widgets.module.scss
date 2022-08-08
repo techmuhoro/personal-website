@@ -1,0 +1,28 @@
+.scroll-animation {
+   @apply border-2 w-7 h-20 rounded-3xl flex relative justify-center py-2;
+}
+.scroll-animation::before {
+   content: '';
+   @apply w-3 h-3 rounded-full absolute bg-white;
+   animation: scroll 1.5s ease-in-out infinite alternate-reverse;
+}
+
+.custom-btn {
+   // btn
+   @apply relative  border border-primary text-primary  py-3 rounded-[2px] z-10;
+
+   // before
+   @apply before:content-[''] before:absolute before:top-0 before:left-0 before:block before:w-0 before:h-full before:bg-primary before:-z-10 before:transition-all before:duration-300;
+
+   // hover
+   @apply hover:text-black hover:before:w-full;
+}
+
+@keyframes scroll {
+   0% {
+      @apply top-2;
+   }
+   100% {
+      @apply top-14;
+   }
+}
