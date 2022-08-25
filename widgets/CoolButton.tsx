@@ -1,6 +1,5 @@
 import React from 'react'
 import styles from './widgets.module.scss'
-import clsx from 'clsx'
 
 interface Props {
    xPadding: string
